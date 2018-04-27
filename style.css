@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family:  'Play', sans-serif, 'Arial';
+   }
+
+.wrapper > * {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.wrapper {
+	background: grey;
+}
+
+
+header {
+	background-image: url(images/Tumblr.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	height: 500px;
+	width: 100%;
+}
+
+h1 {
+	animation: mymove 5s infinite;
+	color: white;
+	font-size: 7em;
+	text-align: center;
+}
+span {
+	color: #aee7f0;
+	
+}
+
+
+@keyframes mymove {
+    50% {text-shadow: 10px 20px 30px black;}
+    }
+/*____navigation____*/
+nav, ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000000;
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+li {
+	padding: 10px 0px;
+	transition: all 1s ease-out;
+}
+li:hover {
+	background: #104d62;
+	padding: 10px;
+}
+a {
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  padding: 10px 10px;
+ }
+
+ /*____main____*/
+
+.main {
+	width: 80%;
+}
+
+ .block {
+ 	border: 1px solid #555555;
+ 	padding: 10px;
+ 	margin: 10px;
+ 	width: 100%;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: flex-start;
+  }
+
+ @media screen and (max-width: 1280px){
+	 .main {
+		width: 98%;
+		margin-right: 20px;
+	}
+}
+
+ h2 {
+ 	padding-bottom: 20px;
+ 	margin-left: 0px;
+ }
+
+iframe {
+	width: 70%;
+	height: 200px;
+	align-self: center;
+	transition: all 1s ease-out;
+}
+iframe:hover {
+  transform: scale(1.1);
+ }
+
+.link-to:hover {
+	background: #555555;
+	transform: scale(1.1);
+}
+
+.bottom {
+	/* background-image: url(images/Tumblr.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top; */
+	background: black;
+	height: 100px;
+	width: 100%;
+	color: white;
+}
+ @media screen and (max-width: 768px){
+	h1 {
+		font-size: 4em;
+	}
+	img, iframe {
+ 		width: 100%;
+ 	}
+}
+
+ @media screen and (max-width: 375px){
+	h2 {
+ 		font-size: 1em;
+ 		padding: 10px;
+ 	}
+ 	h1 {
+		font-size: 3em;
+	}
+	img, iframe {
+ 		width: 100%;
+ 	}
+}
+
