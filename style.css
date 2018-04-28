@@ -77,6 +77,41 @@ a {
 	width: 80%;
 }
 
+.validate {
+	padding: 20px;
+	align-self: center;
+}
+
+.inputStyle {
+	height: 40px;
+	width: 200px;
+	margin-right: 20px;
+	background-color: #14586f99;
+	color: #003646;
+	font-size: 20px;
+	font-family:  'Play', sans-serif, 'Arial';
+	border: 1px solid #0000003b;
+}
+.inputStyle:focus {
+	outline-color:  #14586f99;
+    outline-style: auto;
+    outline-width: 5px;
+}
+
+.submitStyle {
+	background: #104d62;
+	height: 40px;
+	padding: 0px 10px;
+	font-family:  'Play', sans-serif, 'Arial';
+	font-size: 20px;
+	border: 1px solid #0000003b;
+}
+
+.submitStyle:hover {
+	background: #053546;
+	border: 1px solid #000000;
+}
+
  .block {
  	border: 1px solid #555555;
  	padding: 10px;

@@ -28,7 +28,7 @@ console.log (location);*/
 
 
 
-var appendForm = document.getElementById('block1');
+/*var appendForm = document.getElementById('block1');
 var html = '<form name="login" action="google.com" style="padding: 10px; align-self: center;">\
    <input type="text" name="age" style="height: 30px; margin-left: 10px">\
    <input type="text" name="username" style="height: 30px; margin-left: 10px">\
@@ -37,7 +37,46 @@ var html = '<form name="login" action="google.com" style="padding: 10px; align-s
 </form>'
 appendForm.insertAdjacentHTML('beforeEnd', html);
 
-console.log(html);
+console.log(html); */
+
+var block1 = document.querySelectorAll('#block1')[0];
+console.log(block1); 
+var form = document.createElement('form');
+form.name="login";
+form.action="google.com";
+form.className = "validate";
+block1.insertAdjacentElement('beforeend', form);
+
+
+var age = document.createElement('input');
+age.type="text";
+age.name="age";
+age.className = "inputStyle";
+form.insertAdjacentElement('beforeEnd', age);
+
+var username = document.createElement('input');
+username.type="text";
+username.name="username";
+username.className = "inputStyle";
+form.insertAdjacentElement('beforeEnd', username);
+
+var date = document.createElement('input');
+date.type="text";
+date.name="date";
+date.className = "inputStyle";
+form.insertAdjacentElement('beforeEnd', date);
+
+var submit = document.createElement('input');
+submit.type="submit";
+submit.value="Validate Me";
+submit.className = "submitStyle";
+form.insertAdjacentElement('beforeEnd', submit);
+
+
+
+
+
+
 
 // ----- det curent year -----
  function clock () {
@@ -46,5 +85,7 @@ console.log(html);
  	document.querySelectorAll('.bottom')[0].innerHTML =year+' ©   kozakvasyl';
  }
  clock();
+
+ 
 
 
