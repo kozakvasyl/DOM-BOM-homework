@@ -74,6 +74,7 @@ submit.value="Validate Me";
 submit.className = "submitStyle";
 form.insertAdjacentElement('beforeEnd', submit);
 
+<<<<<<< HEAD
 console.log (age.value);
 
 var regexAge = /\d/g;
@@ -84,6 +85,20 @@ else
 
 
 
+=======
+form.addEventListener('submit', validate);
+
+function validate(e) {
+   e.preventDefault();
+
+   var regexAge = /\d/g;
+   if( regexAge == age.value || age.value >= 0 )
+      console.log(true);
+   else
+      console.log(false);
+}
+console.log (typeof " ");
+>>>>>>> 3755886f41beb9c20ba6b78da1957f0b9e614cad
 
 
 
