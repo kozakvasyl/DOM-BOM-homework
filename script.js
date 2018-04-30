@@ -74,7 +74,13 @@ submit.value="Validate Me";
 submit.className = "submitStyle";
 form.insertAdjacentElement('beforeEnd', submit);
 
-var regexAge = 
+console.log (age.value);
+
+var regexAge = /\d/g;
+if ( regexAge.test(age) )
+   console.log (true);
+else
+   console.log(false);
 
 
 
