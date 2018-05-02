@@ -1,5 +1,5 @@
 // ----- TASK1 validation -----
-/*var block1 = document.querySelectorAll('#block1')[0];
+var block1 = document.querySelectorAll('#block1')[0];
 var form = document.createElement('form');
 form.name="login";
 form.action="google.com";
@@ -74,13 +74,10 @@ function validate(e) {
    }
 }
 
-form.addEventListener('submit', validate);*/
-
-
+form.addEventListener('submit', validate);
 
 
 // ----- TASK3 user system -----
-
 var button = document.querySelectorAll('.button')[0];
 button.addEventListener('click', showPlatform);
 
@@ -100,19 +97,21 @@ function showPlatform () {
       var version = platformsMap[key];
      
      if (platform.indexOf(key) >= 0){
-       
-          var message = document.getElementsByClassName('download-message');
+         var downloadMessage = document.getElementsByClassName('download-message');
+                 
+        for (var i = 0; i <= downloadMessage.length; i++) {
+            var dataVersion = downloadMessage[i].getAttribute('data-version');
             
-        for (var i = 0; i <= message.length; i++) {
-            
-            if ( message[i].getAttribute('data-version') === version ) {
-               
-               message[i].style.display='block';
+            if ( dataVersion === version ) {
+               downloadMessage[i].style.display='block';
             }
          }
       }
    }
 }
+
+
+// ----- TASK4 user language -----
 
 
 // ----- get curent year -----

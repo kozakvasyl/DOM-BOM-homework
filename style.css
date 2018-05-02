@@ -131,8 +131,9 @@ a {
 }
 
 .download-message {
-	background: #053546a8;
-	border: 1px solid #000000;
+	background: #14586f99;
+	color: #003646;
+	border: 1px solid #0000003b;
 	padding: 20px 20px;
 	font-size: 20px;
 	align-self: center;
