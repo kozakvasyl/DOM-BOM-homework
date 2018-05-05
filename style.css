@@ -74,7 +74,7 @@ a {
  /*____main____*/
 
 .main {
-	width: 80%;
+	width: 100%;
 }
 
 .validate {
@@ -144,18 +144,26 @@ a {
 
  .block {
  	border: 1px solid #555555;
- 	padding: 10px;
- 	margin: 10px;
+ 	padding: 30px;
  	width: 100%;
+ 	height: 30em;
  	display: flex;
  	flex-direction: column;
  	align-items: flex-start;
   }
 
- @media screen and (max-width: 1280px){
-	 .main {
-		width: 98%;
-		margin-right: 20px;
+  .parallax1 {
+	background: #1a7996cf;
+  }
+
+   .parallax3 {
+	background: #1a7996cf;
+  }
+
+@media screen and (max-width: 1280px){
+	 .block {
+		width: 100%;
+		ghmargin-right: 20px;
 	}
 }
 
