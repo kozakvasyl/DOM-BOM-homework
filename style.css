@@ -21,11 +21,12 @@ body {
 
 
 header {
+	background: black;
 	background-image: url(images/Tumblr.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom;
-	height: 500px;
+	height: 600px;
 	width: 100%;
 }
 
