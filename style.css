@@ -168,7 +168,7 @@ a {
 .lang.visible {
 	display: inline;
 	// @todo: visibility? font-size? etc?
-	
+
 	background: #14586f99;
 	color: #003646;
 	border: 1px solid #0000003b;
@@ -178,9 +178,14 @@ a {
 	display: none;
 	margin-top: 20px;
 }
+#save {
+	margin-top: 
+}
 
 #languages, #welcome-message, #save {
 	align-self: center;
+	margin:10px;
+	padding: 10px;
 }
 
  /*____TASK5____*/
