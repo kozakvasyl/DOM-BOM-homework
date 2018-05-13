@@ -78,6 +78,24 @@ a {
 	width: 100%;
 }
 
+.definition {
+	color: white;
+	gfont-style: italic;
+}
+
+.block {
+ 	padding: 30px;
+ 	width: 100%;
+ 	height: 30em;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: flex-start;
+}
+
+.parallax1, .parallax3 {
+	background: #1a7996cf;
+}
+ /*____TASK1____*/
 .validate {
 	padding: 20px;
 	align-self: center;
@@ -113,6 +131,7 @@ a {
 	border: 1px solid #000000;
 }
 
+ /*____TASK3____*/
 .button {
 	background: #104d62;
 	height: 40px;
@@ -121,11 +140,6 @@ a {
 	font-size: 20px;
 	border: 1px solid #0000003b;
 	align-self: center;
-}
-
-#button1, #button2 {
-	color: black;
-    padding-top: 5px;
 }
 
 .button:hover {
@@ -146,20 +160,30 @@ a {
 	display: none;
 	margin-top: 20px;
 }
-
-
-.block {
- 	padding: 30px;
- 	width: 100%;
- 	height: 30em;
- 	display: flex;
- 	flex-direction: column;
- 	align-items: flex-start;
+ /*____TASK4____*/
+.lang {
+  display: none;
 }
 
-.parallax1, .parallax3 {
-	background: #1a7996cf;
+.lang.visible {
+	display: inline;
+	// @todo: visibility? font-size? etc?
+	
+	background: #14586f99;
+	color: #003646;
+	border: 1px solid #0000003b;
+	padding: 20px 20px;
+	font-size: 20px;
+	align-self: center;
+	display: none;
+	margin-top: 20px;
 }
+
+#languages, #welcome-message, #save {
+	align-self: center;
+}
+
+ /*____TASK5____*/
 #content {
 	padding: 5px;
  	width: 100%;
@@ -215,34 +239,23 @@ a {
   width: 100px; height: 100px;
 }
 
-.definition {
-	color: white;
-	font-style: italic;
+#button1, #button2 {
+	color: black;
+    padding-top: 5px;
 }
 
 @media screen and (max-width: 1280px){
-	 .block {
+	.block {
 		width: 100%;
-		ghmargin-right: 20px;
 	}
 }
 
- h2 {
+h2 {
  	padding-bottom: 20px;
  	margin-left: 0px;
- }
-
-
-.link-to:hover {
-	background: #555555;
-	transform: scale(1.1);
 }
 
 .bottom {
-	/* background-image: url(images/Tumblr.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top; */
 	background: black;
 	height: 100px;
 	width: 100%;
