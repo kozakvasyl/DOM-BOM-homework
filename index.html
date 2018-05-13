@@ -26,11 +26,11 @@
 		<main>
 			<div class="main" id="main">
 				<div class="block parallax1" id="block1">
-					<h2 id="one">Task 1. Implement validation for form below</h2>
+					<h2 id="one"><span class="definition">Task 1.</span> Implement validation for form below</h2>
 				</div>
 			
 				<div class="block">
-					<h2 id="three"> Task3. Show message per user's system</h2>
+					<h2 id="three"><span class="definition">Task3.</span> Show message per user's system</h2>
 					
 					<button class="button">Your OS</button>
 
@@ -42,7 +42,7 @@
 				</div>
 
 				<div class="block parallax3">
-					<h2 id="four"> Task4. Сreate multi-local app</h2>
+					<h2 id="four"><span class="definition">Task4.</span> Сreate multi-local app</h2>
 					
 					<div id="languages">
 						  <label>
@@ -67,12 +67,12 @@
 				</div>
 
 				<div class="block">
-					<h2 id="five"> Task5. What is difference between <em>event.stopPropagation</em> and <em>event.preventDefault</em></h2>
+					<h2 id="five"><span class="definition">Task5.</span> What is difference between <em>event.stopPropagation</em> and <em>event.preventDefault</em></h2>
 					
 					<div id="content">
 						<div class="content">
 							<div class="boxes">
-							<p class="boxes-title">With stopPropagation</p>
+							<p class="boxes-title">With stopPropagation()</p>
 								<div id="box1">
 								  <div id="box2">
 								    <div id="box3"></div>
@@ -81,27 +81,29 @@
 							</div>
 
 							<div class="boxes">
-							<p class="boxes-title">Without stopPropagation</p>
+								<p class="boxes-title">Without stopPropagation()</p>
 								<div id="box4">
-								  <div id="box5">
-								    <div id="box6"></div>
-								  </div>
+									<div id="box5">
+									    <div id="box6"></div>
+									</div>
 								</div>
 							</div>
 						</div>
 
 						<div class="content">
 							<div class="boxes">
-							<p class="boxes-title2">With preventDefault</p>
+							<p class="boxes-title2">With preventDefault()</p>
 								<a class="button" id="button1" href="https://www.google.com.ua" target="_blank">Go to Google</a>
 							</div>
 
 							<div class="boxes">
-							<p class="boxes-title2">Without preventDefault</p>
+							<p class="boxes-title2">Without preventDefault()</p>
 								<a class="button" id="button2" href="https://www.google.com.ua" target="_blank">Go to Google</a>
 							</div>
 						</div>
 					</div>
+					<p><span class="definition">stopPropagation()</span> - метод об'єкту Event, який зупиняє спливаюче (бульбашкове) поширення подій. При цьому, на поточному елементі (де встановлений цей метод) подія  спрацьовує. У вападку (With stopPropagation), клікаючи на кожному квадратику  діалогове вікно виводить по одному 'CLICK'. А у випадку (Without stopPropagation), при кліку на синьому квадратику, через сплиття, 'CLICK' спарцьовує три рази, на зеленому - два...<br> 
+					<span class="definition">preventDefault()</span> - метод об'єкту Event який зупиняє стандартну подію браузера. При кліку на посиланні, у випадку (With preventDefault), перехід на сторінку Google не відбувається.</p>
 
 				</div>
 			</div>
