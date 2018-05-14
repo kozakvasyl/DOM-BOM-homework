@@ -11,7 +11,7 @@ var getCurrentLanguage = function () {
 }
 
 var currentLang = getCurrentLanguage();
-var langEls = document.getElementsByClassName('lang-' + currentLang)[0];
+var langEls = document.getElementsByClassName('lang-' + currentLang);
 //console.log(langEls);
 
 for (var i=0; i<langEls.length; i++) {
