@@ -164,7 +164,7 @@ a {
   display: none;
 }
 
-.lang.visible {
+.visible {
 	display: inline;
 	align-self: center;
 	margin-top: 20px;
