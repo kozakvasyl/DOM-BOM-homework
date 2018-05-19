@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family:  'Play', sans-serif, 'Arial';
+    font-family:  'Play',
+    sans-serif, 'Arial';
    }
 
 .wrapper > * {
@@ -46,7 +47,8 @@ span {
     50% {text-shadow: 10px 20px 30px black;}
     }
 /*____navigation____*/
-nav, ul {
+nav,
+ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -91,7 +93,8 @@ a {
  	align-items: flex-start;
 }
 
-.parallax1, .parallax3 {
+.parallax1,
+.parallax3 {
 	background: #1a7996cf;
 }
  /*____TASK1____*/
@@ -173,7 +176,9 @@ a {
 	margin-top: 
 }
 
-#languages, #welcome-message, #save {
+#languages,
+#welcome-message,
+#save {
 	align-self: center;
 	margin:10px;
 	padding: 10px;
@@ -220,22 +225,26 @@ a {
 	margin-bottom: 100px;
 }
 
-#box1, #box4 {
+#box1,
+#box4 {
   background: red;
   width: 200px; height: 200px;
 }
 
-#box2, #box5 {
+#box2,
+#box5 {
   background: green;
   width: 150px; height: 150px;
 }
 
-#box3, #box6 {
+#box3,
+#box6 {
   background: blue;
   width: 100px; height: 100px;
 }
 
-#button1, #button2 {
+#button1,
+#button2 {
 	color: black;
     padding-top: 5px;
 }
@@ -261,9 +270,6 @@ h2 {
 	h1 {
 		font-size: 4em;
 	}
-	img, iframe {
- 		width: 100%;
- 	}
 }
 
  @media screen and (max-width: 375px){
@@ -274,8 +280,5 @@ h2 {
  	h1 {
 		font-size: 3em;
 	}
-	img, iframe {
- 		width: 100%;
- 	}
 }
 
