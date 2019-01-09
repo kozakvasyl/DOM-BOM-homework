@@ -187,8 +187,8 @@ a {
  /*____TASK5____*/
 #content {
 	padding: 5px;
-	 width: 100%;
-	 height: 70%;
+	width: 100%;
+	height: 70%;
  	display: flex;
  	flex-wrap: wrap;
  	flex-direction: column;
